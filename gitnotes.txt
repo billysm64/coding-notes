@@ -1,0 +1,36 @@
+==Creating repo==
+git init
+
+==Basic things==
+git status
+* check status of repo
+
+git add .
+git status
+git commit -m "initial commit"
+git status
+
+git branch -M main
+git remote add origin git@github.com:billysm64/git-test.git
+git push -u origin main
+
+==Revert to previous revision==
+git log --oneline
+* See what commits are there
+git checkout 453b1f7 index.html
+* Go back to previous revision
+
+==Remove a file from the repository==
+Remove a file from the system and repo:
+$ git rm file1.txt
+Remove only from repo:
+$ git rm file2.txt --cached
+
+
+==Other terminal things==
+
+===Create a file===
+touch notes.txt
+
+===Rename a file===
+mv notes.txt gitnotes.txt
